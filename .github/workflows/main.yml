@@ -27,7 +27,6 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: |
-            mmartinsti/rotten-potatoes:latest
             mmartinsti/rotten-potatoes:v1
           
           
