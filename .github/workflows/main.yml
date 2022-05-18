@@ -28,7 +28,7 @@ jobs:
           push: true
           tags: |
             mmartinsti/rotten-potatoes:latest
-            mmartinsti/rotten-potatoes:${{ github.run_number }}
+            mmartinsti/rotten-potatoes:v1
           
           
           
