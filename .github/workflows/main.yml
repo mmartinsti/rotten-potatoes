@@ -20,3 +20,15 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USER }}
           password: ${{ secrets.DOCKERHUB_PWD }}
+      - name: Build and push Docker images
+        uses: docker/build-push-action@v3.0.0
+        with:
+          context: ./src
+          file: ./src/Dockerfile
+          push: true
+          tags:
+            mmartinsti/rotten-potatoes:latest
+            mmartinsti/rotten-potatoes:${{ github.run_number }}
+          
+          
+          
