@@ -33,6 +33,7 @@ jobs:
 # Agora vamos ao processo de CD
 
   CD:
+    needs: [CI]
     runs-on: ubuntu-latest
     
     steps:
