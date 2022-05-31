@@ -39,10 +39,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Azure Kubernetes set context
-        uses: Azure/aks-set-context@v2.1
+        uses: Azure/k8s-set-context@v1.1
         with:
-          resource-group: "rg_tf-kubernets"
-          cluster-name: "live_cluster2"
+          method: kubeconfig
+          kubeconfig: ${{ secrets.K8S_CONFIG }}
+          
       
       
           
