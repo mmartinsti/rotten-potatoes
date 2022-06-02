@@ -43,10 +43,10 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
           
       - name: Azure Kubernetes set context
-        uses: Azure/k8s-set-context@v1.1
+        uses: Azure/aks-set-context@v2.1
         with:
-          method: kubeconfig
-          kubeconfig: ${{ secrets.K8S_CONFIG }}
+          resource-group: rg_tf-kubernets
+          cluster-name: live-cluster2
           
       
       
