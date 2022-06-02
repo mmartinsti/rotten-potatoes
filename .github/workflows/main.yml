@@ -45,9 +45,9 @@ jobs:
       - name: Azure Kubernetes set context
         uses: Azure/aks-set-context@v2.1
         with:
-          resource-group: rg_tf-kubernets
-          cluster-name: live-cluster2-15bd8c7b.hcp.eastus.azmk8s.io
-          subscription: 07624e3f-91a5-4de7-8f0a-0ac3693d4416
+          resource-group: "rg_tf-kubernets"
+          cluster-name: "live-cluster2"
+          subscription: "07624e3f-91a5-4de7-8f0a-0ac3693d4416"
           
       
       
